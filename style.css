@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Amsterdam';
+    src: url(./assets/amsterdam-four-ttf.ttf);
+}
+
+@font-face {
+    font-family: 'Rotis';
+    src: url(./assets/rotis-sans-serif.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primeiro: #2D4B73;
+    --segundo: #253C59;
+    --terceiro: #99B4BF;
+    --quarto: #D9B70D;
+    --quinto: #BF8D30;
+}
+
+main{
+    background: linear-gradient(rgba(37, 60, 89, 0.8), rgba(37, 60, 89, 0.8)),
+        url(./assets/tatuando.jpeg);
+    height: 100vh;
+    background-position: center;
+}
+
+.div-ja p{
+    font-family: 'Rotis';
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 1.7em;
+    color: var(--terceiro);
+}
+
+.link-header{
+    font-family: 'Rotis';
+    color: var(--terceiro);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 2em;
+}
+
+.link-header:active{
+    color: var(--quinto);
+
+}
+
+.link-header:hover{
+    text-shadow: rgba(192, 141, 48, .5) 2px 2px 2px;
+}
+
+header{
+    text-align: end;
+    padding: 2em 0;
+}
+
+h1{
+    font-family: 'Amsterdam';
+    color: var(--quarto);
+    font-weight: 300;
+    font-size: 3em;
+    text-align: center;
+    word-spacing: 0.5em;
+}
+
+.div-ja h2{
+    font-family: 'Rotis';
+    color: var(--quarto);
+    font-size: 2.8em;
+    font-weight: 100;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.div-ja h2::before, .div-ja h2::after{
+    content: ' ';
+    position: absolute;
+    top: 0.75em;
+    width: 3em;
+    height: 0.09em;
+    background-color: var(--quarto);
+    left: -0.75em;
+}
+
+.div-ja h2::after{
+    left: initial;
+    right: -0.75em;
+}
+
+.div-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2em;
+}
+
+.joao{
+    border-radius: 100%;
+    height: 55vh;
+    margin-top: 3em;
+}
+
+.cinza{
+    background: var(--terceiro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maquina{
+    width: 5em;
+    padding: 1.1em 1em;
+}
+
+.cinza p{
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Rotis';
+    color: var(--primeiro);
+
+}
+
+.responsabilidade{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    align-items: center;
+}
+
+.divL{
+    width: 50%;
+}
+
+.divL h3{
+    font-family: 'Amsterdam';
+    color: var(--quarto);
+    font-size: 2em;
+    letter-spacing: 3px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.divL p{
+    font-family: 'Rotis';
+    color: var(--segundo);
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.local{
+    background: linear-gradient(rgba(37, 60, 89, 0.8), rgba(37, 60, 89, 0.8)),
+        url(./assets/studio.jpg);
+    background-position: center;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+i{
+    color: var(--quinto);
+    font-size: 7em;
+    padding-left: 1.5em;
+}
+
+.local p{
+    font-family: 'Rotis';
+    color: var(--terceiro);
+    font-size: 1.5em;
+
+}
+
+iframe{
+    height: 80%;
+    width: 50%;
+    margin-left: 5em;
+}
+
+.cuidados h2{
+    font-family: 'Rotis';
+    color: var(--quarto);
+    font-size: 2em;
+    text-align: center;
+}
+
+.cuidados h3{
+    font-family: 'Rotis';
+    color: var(--terceiro);
+    margin-top: 2em;
+}
+
+.cuidados p{
+    font-family: 'Rotis';
+    color: var(--segundo);
+    margin-top: .5em;
+    
+}
+
+
+.div-cuidados div{
+    padding: 2em 2em;
+    width: 30%;
+    display: inline-block;
+    align-items: flex-start;
+    text-align: center;
+
+}
